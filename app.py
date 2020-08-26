@@ -8,15 +8,17 @@ app.config["DEBUG"] = True
 def main():
     print ('Request')
     print (request)
-    print ('Request Arguments \n\n')
+    print ('RAW Data')
+    print (request.get_data())
+    print ('Request Arguments')
     print (request.args)
-    print ('Form Data \n\n')
+    print ('Form Data')
     print (request.form)
-    print ('Request Files \n\n')
+    print ('Request Files')
     print (request.files)
-    print ('Request Values \n\n')
+    print ('Request Values')
     print (request.values)
-    print ('Request JSON \n\n')
+    print ('Request JSON')
     print (request.json)
     response = app.response_class(
         response = 'success',
