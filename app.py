@@ -1,10 +1,5 @@
 import flask
 from flask import request
-from flask import jsonify
-import zipfile
-import requests
-from io import BytesIO
-import json
 
 app = flask.Flask(__name__)
 app.config["DEBUG"] = True
