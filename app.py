@@ -6,6 +6,8 @@ app.config["DEBUG"] = True
 
 @app.route('/', methods=['POST'])
 def main():
+    print ('Request')
+    print (request)
     print ('Request Arguments \n\n')
     print (request.args)
     print ('Form Data \n\n')
