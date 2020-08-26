@@ -8,6 +8,8 @@ app.config["DEBUG"] = True
 def main():
     print ('Request')
     print (request)
+    print ('Request Headers')
+    print (request.headers)
     print ('RAW Data')
     print (request.get_data())
     print ('Request Arguments')
