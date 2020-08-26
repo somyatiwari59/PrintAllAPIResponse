@@ -6,16 +6,16 @@ app.config["DEBUG"] = True
 
 @app.route('/', methods=['POST'])
 def main():
-    print 'Request Arguments \n\n'
-    print request.args
-    print 'Form Data \n\n'
-    print request.form
-    print 'Request Files \n\n'
-    print request.files
-    print 'Request Values \n\n'
-    print request.values
-    print 'Request JSON \n\n'
-    print request.json
+    print ('Request Arguments \n\n')
+    print (request.args)
+    print ('Form Data \n\n')
+    print (request.form)
+    print ('Request Files \n\n')
+    print (request.files)
+    print ('Request Values \n\n')
+    print (request.values)
+    print ('Request JSON \n\n')
+    print (request.json)
     response = app.response_class(
         response = 'success',
         status = 200,
